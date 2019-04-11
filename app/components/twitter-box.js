@@ -4,16 +4,19 @@ import {action} from '@ember/object'; //importar libreria de acciones
 
 export default class TwitterBoxComponent extends Component {
 	@tracked text;
+	@tracked error;
 
 	@action handleChange(text){
 		this.text = text;
+		this.error = error;
 	}
 
-	@action handleSubmit(){
-		let newText = this.text;
-		if(this.args.onSubmit)
-			this.args.onSubmit(newText);
-		else alert('handleSubmit');
+	@action 
+	async handleSubmit(){
+		let text = this.text;
+		let req = await this.args.onSubmit(text);
+		this.error = req.error;
+		this.text = '';
 	}
 
 }
