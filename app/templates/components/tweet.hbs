@@ -1,3 +1,13 @@
-<li>{{@tweet.id}}</li>
-<li>{{@tweet.username}}</li>
-<li>{{@tweet.description}}</li>
+<div class="tweet" id={{@tweet.id}}>
+	<div class="tweet-image">
+		<img class="circle" src={{if @tweet.avatar @tweet.avatar "https://image.flaticon.com/icons/png/512/149/149071.png"}}/>
+	</div>
+	<div class="tweet-content">
+		<div class="tweet-content-header">
+			<span class="tweet-content-header-user">@{{if @tweet.userName @tweet.userName "Anonimo"}}</span>
+		</div>
+		<div class="tweet-content-body">
+			<p>{{@tweet.description}}</p>
+		</div>
+	</div>
+</div>

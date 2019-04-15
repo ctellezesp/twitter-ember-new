@@ -1,12 +1,20 @@
-<form>
-	<input type="text"
-	placeholder="What's Happening?" 
-	value={{this.text}}
-	oninput={{action this.handleChange value="target.value"}}
-	>
-	<button
-		{{action this.handleSubmit}}
-	>
-		Tweet
-	</button>
-</form>
+<div id="twitter-box">
+	<div id="twitter-box-image">
+		<img class="circle" src="https://avatars0.githubusercontent.com/u/26472750?s=460&v=4">
+	</div>
+	<div id="twitter-box-input">
+		<input
+			type="text"
+			placeholder="What's Happening?" 
+			value={{this.text}}
+			oninput={{action this.handleChange value="target.value"}}
+			>
+	</div>
+	<div id="twitter-box-button">
+		<button
+			{{action this.handleSubmit}}
+		>
+			Tweet
+		</button>
+	</div>
+</div>

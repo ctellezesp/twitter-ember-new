@@ -1,0 +1,139 @@
+body{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+}
+
+#main{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+}
+
+#menu{
+	display: flex;
+	width: 100%;
+	background: #38A1F3;
+	flex-direction: row;
+	color: white;
+}
+
+#content{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+}
+
+#profile{
+	display: flex;
+	width: 20%;
+}
+
+#landing{
+	display: flex;
+	width: 80%;
+	flex-direction: column;
+}
+
+#profile > img{
+	width: 50px;
+	height: 50px;
+}
+
+.circle{
+	border-radius: 50%;
+}
+
+#twitter-box{
+	display: flex;
+	width: 100%;
+	flex-direction: row;
+	background: white;
+	z-index: 1;
+	margin: 14px 0;
+}
+
+#twitter-box-image{
+	width: 10%;
+	display: inline-flex;
+	justify-content: center;
+}
+
+#twitter-box-image > img{
+	width: 70px;
+	height: 70px;
+}
+
+#twitter-box-input{
+	width: 70%;
+	display: inline-flex;
+}
+
+#twitter-box-input > input{
+	width: 100%;
+}
+
+#twitter-box-button{
+	width: 20%;
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#twitter-box-button > button{
+	background: #1da1f2;
+	border-radius: 50px;
+	width: 60%;
+	height: 50%;
+	color: white;
+}
+
+#landing-tweets{
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+}
+
+.tweet{
+	width: 100%;
+	border-top: 1px solid black;
+	display: flex;
+	flex-direction: row;
+	padding: 10px 0;
+}
+
+.tweet-image{
+	display: inline-flex;
+	width: 10%;
+	justify-content: center;
+}
+
+.tweet-image > img{
+	width: 75px;
+	height: 75px;
+}
+
+.tweet-content{
+	display: inline-flex;
+	width: 80%;
+	flex-direction: column;
+}
+
+.tweet-content-header{
+	display: flex;
+	flex-direction: row;
+}
+
+.tweet-content-header-user{
+	font-weight: bold;
+	font-size: 1em;
+}
+
+.tweet-content-body{
+	display: flex;
+	width: 100%;
+}
+

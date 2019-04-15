@@ -1,9 +1,9 @@
 {{log @tweets}}
-<ul>
+<div id="landing-tweets">
 	{{#each @tweets as |tweet|}} 
 		<Tweet 
 			@tweet={{tweet}}
 		/>
 		{{else}} No hay tweets
 	{{/each}}
-</ul>
+</div>

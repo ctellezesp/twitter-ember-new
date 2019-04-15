@@ -8,7 +8,7 @@ export default class TwitterBoxComponent extends Component {
 
 	@action handleChange(text){
 		this.text = text;
-		this.error = error;
+		//this.error = error;
 	}
 
 	@action 
