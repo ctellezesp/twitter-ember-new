@@ -1,6 +1,7 @@
 {{log @tweets}}
 <div id="landing-tweets">
 	{{#each @tweets as |tweet|}} 
+		{{log tweet}}
 		<Tweet 
 			@tweet={{tweet}}
 		/>

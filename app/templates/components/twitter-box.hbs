@@ -1,6 +1,6 @@
 <div id="twitter-box">
 	<div id="twitter-box-image">
-		<img class="circle" src="https://avatars0.githubusercontent.com/u/26472750?s=460&v=4">
+		<img class="circle" src={{this.img}}>
 	</div>
 	<div id="twitter-box-input">
 		<input
@@ -11,10 +11,12 @@
 			>
 	</div>
 	<div id="twitter-box-button">
+		{{#if this.text}}
 		<button
 			{{action this.handleSubmit}}
 		>
 			Tweet
 		</button>
+		{{/if}}
 	</div>
 </div>
