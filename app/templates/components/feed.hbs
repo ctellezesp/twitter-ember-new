@@ -3,7 +3,7 @@
 	{{#each @tweets as |tweet|}} 
 		{{log tweet}}
 		<Tweet 
-			@tweet={{tweet}}
+			@tweet={{tweet}} @onDelete={{this.onDelete}}
 		/>
 		{{else}} No hay tweets
 	{{/each}}

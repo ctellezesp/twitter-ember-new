@@ -14,7 +14,7 @@
 		</div>
 		<div id="landing">
 			<TwitterBox @handleSubmit={{this.onSubmit}}/>
-			<Feed @tweets={{this.model}}/>
+			<Feed @tweets={{this.model}} @onDelete={{this.onDelete}} />
 		</div>
 	</div>
 </div>

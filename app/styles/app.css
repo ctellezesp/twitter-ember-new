@@ -138,7 +138,7 @@ body{
 
 .tweet-content{
 	display: inline-flex;
-	width: 80%;
+	width: 85%;
 	flex-direction: column;
 }
 
@@ -157,3 +157,15 @@ body{
 	width: 100%;
 }
 
+.tweet-delete{
+	display: inline-flex;
+	width: 5%;
+}
+
+.delete-icon{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	font-size: 36px !important;
+	cursor: pointer;
+}

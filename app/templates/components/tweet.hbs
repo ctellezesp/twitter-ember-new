@@ -10,4 +10,7 @@
 			<p>{{@tweet.description}}</p>
 		</div>
 	</div>
+	<div class="tweet-delete" onclick={{action this.deleteTweet @tweet.id}}>
+		<i class="material-icons delete-icon">delete</i>
+	</div>
 </div>
