@@ -7,7 +7,5 @@ export default class TweetComponent extends Component {
 	@action 
 	deleteTweet(id){
 		let x = this.args.onDelete(id);
-		if(x.error)
-			window.alert('No se puede borrar');
 	}
 }
