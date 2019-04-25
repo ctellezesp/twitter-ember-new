@@ -1,10 +1,10 @@
 <div class="tweet" id={{@tweet.id}}>
 	<div class="tweet-image">
-		<img class="circle" src={{if @tweet.avatar @tweet.avatar "https://image.flaticon.com/icons/png/512/149/149071.png"}}/>
+		<img class="circle" src={{@tweet.user.avatar}} alt={{@tweet.user.username}} />
 	</div>
 	<div class="tweet-content">
 		<div class="tweet-content-header">
-			<span class="tweet-content-header-user">@{{if @tweet.userName @tweet.userName "Anonimo"}}</span>
+			<LinkTo @route="app.profile" @model={{@tweet.user.id}}><span class="tweet-content-header-user">@{{if @tweet.user.username @tweet.user.username "Anonimo"}}</span></LinkTo>
 		</div>
 		<div class="tweet-content-body">
 			<p>{{@tweet.description}}</p>

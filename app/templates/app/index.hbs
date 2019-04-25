@@ -1,0 +1,20 @@
+<div id="main">
+	<div id="menu">
+		<h2>Twitter</h2>
+	</div>
+	<div id="content">
+		<div id="profile">
+			<div id="profile-img">
+				<img class="circle" src="https://avatars0.githubusercontent.com/u/26472750?s=460&v=4" />
+			</div>
+			<div id="profile-data">
+				<span class="tweet-content-header-user">@ctellezesp</span>
+				<span>Carlos Tellez</span>
+			</div>
+		</div>
+		<div id="landing">
+			<TwitterBox @handleSubmit={{this.onSubmit}}/>
+			<Feed @tweets={{this.model.tweets}} @onDelete={{this.onDelete}} />
+		</div>
+	</div>
+</div>

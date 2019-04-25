@@ -1,7 +1,5 @@
-{{log @tweets}}
 <div id="landing-tweets">
-	{{#each @tweets as |tweet|}} 
-		{{log tweet}}
+	{{#each @tweets as |tweet|}}
 		<Tweet 
 			@tweet={{tweet}} @onDelete={{this.onDelete}}
 		/>
